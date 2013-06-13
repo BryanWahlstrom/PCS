@@ -1,0 +1,20 @@
+1. For class names
+
+2. For multi statement blocks
+
+3. assert_equal tests if two arguments are equal, assert allows you to assert that some arbitrary condition is true
+
+4. In the 'describe' part of the spec
+
+
+5. to avoid redundant code
+
+6. spec .
+
+ A stub is an object that implements the same interface as one of the supporting cast members, but returns canned answers when its methods are called. They are great for producing the boring infrastructure that you need to make a test work. They are a sort of stand-in
+
+ A mock is a stub with an attitude. Along with knowing what canned responses to return, a mock also knows which methods should be called and with what arguments. Critically, a disappointed mock will fail the test. Thus, while a stub is there purely to get the test to work, a mock is an active participant in the test, watching how it is treated and failing the test if it doesn’t like what it sees.
+
+ Because it is all too easy to create a test that looks right but doesn’t actually test anything worthwhile.
+
+ That if you don't have the time to be writing amazing and long tests, at least run simple ones with no asserts, as they provide you with more valuable info than you might think.

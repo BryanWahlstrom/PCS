@@ -1,0 +1,22 @@
+Blue
+978285600.0, (60*60*24*365.25) * (years)
+A group of letters in a program
+Nothing
+\'
+A representation of stored info given a name so it can be recalled easily
++ variable.to_s +  concatenation  OR  #{variable}   interpolation
+To convert variables to strings or integers, because they can't be used together
+
+***Odds
+Because on the string example, the 1 digit comes before the 2 digit
+False and nil
+You assign a variable
+CTRL+C
+To create an infinite loop
+&&: "And"  both must be true or both must be false to return "true"
+||: "Or" only one has to be true to return "true"
+if !false  means you take the action if it's true,   unless false   means you take the action if it's false
+A list of objects
+Counting starts at 0, not 1
+.each
+push adds an object to the end of your array, and pop removes the last object from the array (and tells you what it was). last is similar to pop in that it tells you what’s at the end of the array, except that it leaves the array alone.

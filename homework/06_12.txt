@@ -1,0 +1,25 @@
+How do you add a newline to a String?
+
+\n
+
+
+What is the difference between single and double quotes?
+
+Single quotes less flexible, can only escape quotes and backslashes. Double quotes allow you to put tabs and newlines and embed arbitrary expressions
+
+
+How would you replace all instances of the word ‘pie’ with the word ‘pizza’ in a String?
+
+string.gsub('pie', 'pizza')
+
+What is the difference between gsub and gsub!?
+
+gsub! will modify the string in place instead of returning a modified copy
+
+Do a little research on apidock.com and find 5 methods on String that you think are interesting and could be useful.
+
+gsub =
+insert=
+match=
+split=
+unpack=

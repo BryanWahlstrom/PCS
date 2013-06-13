@@ -1,0 +1,26 @@
+unless
+
+until
+
+single line readable versions -- "do this if that"
+
+a case statement returns the values of the selected when or else clause—or nil if no when clause matches and there is no else.
+
+false and nil
+
+acts like a compact, one line if statement
+
+initializing a variable to make sure it's not nil
+
+ poem_words = %w{ twinkle little star how I wonder }
+
+book_info = { :first_name => 'Russ', :last_name => 'Olsen' }
+book_info = { first_name: 'Russ', last_name: 'Olsen' }
+
+splat
+
+no!  .each
+
+map cooks up a new array containing everything the block returned, in order. The map method is incredibly useful for transforming the contents of a collection en mass
+
+one with an ! that changes the variable in place

@@ -1,0 +1,10 @@
+entry[:tacos] = ask("Do you like tacos?"){ |q| q.validate = /^(yes|no)$/i }
+entry[:burritos] = ask("Do you like burritos?"){ |q| q.validate = /^(yes|no)$/i }
+entry[:tortas] = ask("Do you like tortas?"){ |q| q.validate = /^(yes|no)$/i }
+entry[:quesadillas] = ask("Do you like quesadillas?"){ |q| q.validate = /^(yes|no)$/i }
+entry[:jarritos] = ask("Do you like jarritos?"){ |q| q.validate = /^(yes|no)$/i }
+entry[:chimichangas] = ask("Do you like chimichangas?"){ |q| q.validate = /^(yes|no)$/i }
+entry[:pollo] = ask("Do you like pollo?"){ |q| q.validate = /^(yes|no)$/i }
+entry[:carne] = ask("Do you like carne?"){ |q| q.validate = /^(yes|no)$/i }
+entry[:frijoles] = ask("Do you like frijoles?"){ |q| q.validate = /^(yes|no)$/i }
+entry[:me] = ask("Do you like me?"){ |q| q.validate = /^(yes|no)$/i }

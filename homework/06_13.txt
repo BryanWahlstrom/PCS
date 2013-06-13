@@ -1,0 +1,21 @@
+What does the dot character match? any single character
+
+How do you match exactly 3 lower case characters? [a-z][a-z][a-z]
+
+How do you match a range of characters? [0-9a-zA-Z_]
+
+How do you match any whitespace? \s
+
+How do you match any number? \d for each digit, also [0–9]*
+
+How do you match either “ferret” or “weasel”? (ferret|weasel)
+
+What’s the difference between * and +     the star searches for zero or any number of the character before it, the +  searches for one or more of the character before it
+
+What does the operator =~ do in Ruby?  it tests whether the regexp matches a string
+
+How do you match the beginning/end of a line? /\A  \z/
+
+Regular expressions marked the beginning of my serious programmer career. Seriously spend some time on this. In fact, write down the time and remember where you were when you learned regexen.
+
+12.06.13 10:00PM
