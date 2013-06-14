@@ -1,4 +1,8 @@
-class PigLatinSentence   #creating a class
+# I had to troubleshoot quite a few errors and problems in order to get this to work.
+# I totally understand boolean evals? and the diff between []s and {}s.
+# I am working hard to better understand iteration and things like .each
+
+class PigLatinPronouncer   #creating a class
   def initialize word    #instance method
     @word = word         #instance variable
   end
@@ -14,7 +18,7 @@ class PigLatinSentence   #creating a class
     end
   end
 
-  B = PigLatinSentence.new 'Bryan'  #class method
+  B = PigLatinPronouncer.new 'Bryan'  #class method
   puts B.pig
 
 end
@@ -22,11 +26,11 @@ end
 
 require 'minitest/autorun'   #took all sorts of troubleshooting to get this working!
 
-class PigLatinSentenceTest < MiniTest::Unit::TestCase
+class PigLatinPronouncerTest < MiniTest::Unit::TestCase
 
   def setup
-    @word1 = PigLatinSentence.new 'Happy'
-    @word2 = PigLatinSentence.new 'egg'
+    @word1 = PigLatinPronouncer.new 'Happy'
+    @word2 = PigLatinPronouncer.new 'egg'
   end
 
   def test_consonant_at_start
