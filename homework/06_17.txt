@@ -1,0 +1,46 @@
+In your own words, summarize the 7 things on page 9-11 that jQuery does well
+1. Access elements in a document: it's easy to select stuff using their CSS elements
+2. Modify the appearance of a web page: after the page has loaded and rendered you can still make changes to the appearance of the page "after the fact", change things separate from the CSS sheet
+3. Alter the content of a document: you can modify content, not just appearance
+4. Respond to a user's interaction: allows you to time if and when the magic happens according to what the user is doing
+5. Animate changes being made to a document: visual effects to show user the changes happening
+6. Retrieve information from a server without refreshing a page: the magic of Ajax
+7. Simplify common JavaScript tasks: enhances basic JavaScript stuff
+
+
+How do you include external javascript files in HTML?
+Add it at the bottom, right before the closing body tag.
+<script src="jquery.min.js"></script>
+</body>
+
+Should jquery.js get included before or after our project files?
+Before
+
+What does this code do and why do we use it? $(document).ready()
+Sends us a "signal" that the page is rendered and ready to run the JavaScript
+
+What code would you use to select these things:
+
+
+an element
+$("element")
+
+an id
+$("#id")
+
+a class
+$(".class")
+
+a p tag, inside a div with class “turkey”, inside a body with the id “thanksgiving”.
+$("#thanksgiving .turkey p")
+
+How would you add “tiger stripes” to a table with jQuery? (tiger stripes are alternating
+background colors)
+$('tr:nth-child(odd)').addClass('tiger');
+
+
+How do we select only checkboxes that are currently checked?
+$('input[type="checkbox"]:checked')
+
+(research) What is the keyboard command to open the Chrome element inspector? To open the Chrome console?
+Cmd+Opt+I, Cmd+Opt+J
