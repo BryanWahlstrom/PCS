@@ -1,3 +1,7 @@
+#Despite satisfying the requirements of this exam, I still feel my knowledge of
+#testing and Ruby in general is a bit juvenile and naive, and definitely nowhere
+#near a "professional" level. I definitely need to work on all of this more.
+
 class Bob
   def respond(statement)
     if statement.empty?
@@ -66,6 +70,11 @@ class BobTest < MiniTest::Unit::TestCase
     bob = mock('bob')
     bob.expects(:respond).with(:statement).returns(:result)
     assert_equal :result, bob.respond(:statement)
+  end
+
+  def test_stub
+    bob = stub(:respond => :result)
+    assert_equal :result, bob.respond
   end
 
 end
