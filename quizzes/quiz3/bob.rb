@@ -2,10 +2,14 @@ class Bob
   def respond(statement)
     if statement.empty?
      "Fine, be that way."
+    elsif statement == statement.upcase && statement =~ /[?]$/
+     "Maybe if you toned it down a lil."
+    elsif statement == statement.downcase && statement =~ /[?]$/
+      "Maybe if I could hear you."
     elsif statement == statement.upcase
      "Woah, chill out."
     elsif statement == statement.downcase
-      "Speak up bro."
+     "Speak up bro."
     elsif statement =~ /[?]$/
      "Sure."
     else "Whatever."
@@ -48,13 +52,11 @@ class BobTest < MiniTest::Unit::TestCase
   end
 
   def test_bob_answers_shouted_question
-    skip
     response = @bob.respond("HI?")
     assert_equal "Maybe if you toned it down a lil.", response
   end
 
   def test_bob_answers_whispered_question
-    skip
     response = @bob.respond("hi?")
     assert_equal "Maybe if I could hear you.", response
   end
