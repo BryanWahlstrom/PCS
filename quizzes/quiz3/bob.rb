@@ -31,6 +31,17 @@ class BobTest < MiniTest::Unit::TestCase
     @bob = Bob.new
   end
 
+  def test_traditional_mocking
+    bob = mock('bob')
+    bob.expects(:respond).with(:statement).returns(:result)
+    assert_equal :result, bob.respond(:statement)
+  end
+
+  def test_stub
+    bob = stub(:respond => :result)
+    assert_equal :result, bob.respond
+  end
+
   def test_bob_answers_silence
     response = @bob.respond("")
     assert_equal "Fine, be that way.", response
@@ -66,15 +77,5 @@ class BobTest < MiniTest::Unit::TestCase
     assert_equal "Maybe if I could hear you.", response
   end
 
-  def test_traditional_mocking
-    bob = mock('bob')
-    bob.expects(:respond).with(:statement).returns(:result)
-    assert_equal :result, bob.respond(:statement)
-  end
-
-  def test_stub
-    bob = stub(:respond => :result)
-    assert_equal :result, bob.respond
-  end
 
 end
