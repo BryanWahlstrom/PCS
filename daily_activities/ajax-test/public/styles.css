@@ -1,0 +1,22 @@
+.square {
+  background-color: gray;
+  height: 80px;
+  width: 80px;
+  margin: 0 3px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.handle {
+  text-align: center;
+}
