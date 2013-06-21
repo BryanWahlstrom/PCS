@@ -12,8 +12,6 @@ class Bob
     end
   end
 
-  # def question
-
 end
 
 require 'minitest/autorun'
@@ -49,4 +47,15 @@ class BobTest < MiniTest::Unit::TestCase
     assert_equal "Whatever.", response
   end
 
+  def test_bob_answers_shouted_question
+    skip
+    response = @bob.respond("HI?")
+    assert_equal "Maybe if you toned it down a lil.", response
+  end
+
+  def test_bob_answers_whispered_question
+    skip
+    response = @bob.respond("hi?")
+    assert_equal "Maybe if I could hear you.", response
+  end
 end
