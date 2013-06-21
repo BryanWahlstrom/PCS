@@ -19,6 +19,7 @@ class Bob
 end
 
 require 'minitest/autorun'
+require 'mocha/setup'  #installed mocha gem to try to run mocks/stubs in MiniTest
 
 class BobTest < MiniTest::Unit::TestCase
 
@@ -60,4 +61,11 @@ class BobTest < MiniTest::Unit::TestCase
     response = @bob.respond("hi?")
     assert_equal "Maybe if I could hear you.", response
   end
+
+  def test_traditional_mocking
+    bob = mock('bob')
+    bob.expects(:respond).with(:statement).returns(:result)
+    assert_equal :result, bob.respond(:statement)
+  end
+
 end
