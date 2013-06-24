@@ -1,0 +1,28 @@
+When you think about testing javascript, what use cases come to mind? Are they different from ruby?
+It seems very similar to me to the testing we have done in ruby
+
+
+
+Is jasmine a unit test framework or an integration test framework?
+Unit test
+
+
+
+How do you set up a basic jasmine runner? What boilerplate is needed?
+Boilerplate html + jasmine lib + a src file and a spec file you make
+
+
+
+If it roughly corresponds with an individual test, what does describe correspond with?
+Setup
+A spec suite... a string and a function
+
+
+How do you test equality?
+
+expect().toEqual()
+
+
+
+What is the equivalent to setup/teardown?
+beforeEach and afterEach
