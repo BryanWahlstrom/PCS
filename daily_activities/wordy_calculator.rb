@@ -1,12 +1,8 @@
 class Calculator
   def ask(question)
-    if question.match(/What is (-?\d+) plus (-?\d+) plus (-?\d+)?/) do |m|
+    question.match(/What is (-?\d+) plus (-?\d+) plus (-?\d+)?/) do |m|
       m[1].to_i + m[2].to_i + m[3].to_i
       end
-    elsif question.match(/What is (-?\d+) plus (-?\d+)?/) do |m|
-        m[1].to_i + m[2].to_i
-      end
-    end
   end
 end
 
@@ -19,12 +15,19 @@ class CalculatorTest < MiniTest::Unit::TestCase
   end
 
   def test_add_1
+    assert_equal 2, @calculator.ask('What is 1 plus 1?')
+  end
+
+  def test_add_1_twice
     assert_equal 3, @calculator.ask('What is 1 plus 1 plus 1?')
   end
 
   def test_add_2
-    skip
     assert_equal 3, @calculator.ask('What is 1 plus 2?')
+  end
+
+  def test_add_2_twice
+    assert_equal 5, @calculator.ask('What is 1 plus 2 plus 2?')
   end
 
   def test_add_more_digits
@@ -36,5 +39,4 @@ class CalculatorTest < MiniTest::Unit::TestCase
     skip
     assert_equal (-11), @calculator.ask('What is -1 plus -10?')
   end
-
 end
