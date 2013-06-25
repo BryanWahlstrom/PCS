@@ -1,6 +1,6 @@
 class Calculator
   def ask(question)
-    question.match(/What is (-?\d+) (plus|minus|multiplied by|divided by) (-?\d+)?/) do |m|
+    question.match(/What is (-?\d+) (plus|minus|multiplied by|divided by) (-?\d+)/) do |m|
       if m[2] == 'plus'
         m[1].to_i + m[3].to_i
       elsif m[2] == 'minus'
