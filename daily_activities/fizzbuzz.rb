@@ -5,20 +5,20 @@
 
 class FizzBuzz
   def self.countdown
-    puts "What is your number?"
-    top_num = Integer(gets)
+    # puts "What is your number?"
+    # top_num = Integer(gets)
     1.upto(top_num) do |num|
-      if num%3 == 0 && num%5 == 0
+      if num % 15 == 0
         puts "FizzBuzz"
-      elsif num%3 == 0
+      elsif num % 3 == 0
         puts "Fizz"
-      elsif num%5 == 0
+      elsif num % 5 == 0
         puts "Buzz"
       else
-        puts "#{num}"
+        puts num
       end
-    end
+    # end
       return "Booyah sucka!"
   end
 end
-
+end

@@ -34,7 +34,20 @@
       <h1>This is my heading</h1>
       <p>And this is my subheading</p>
       <p>
-        <a class="btn btn-primary btn-large">Click Me</a>
+        <a class="btn btn-primary btn-large" href="#myModal" role="button" data-toggle="modal">Click Me</a>
+        <!-- Modal -->
+      <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Totally modal-tastic</h3>
+        </div>
+        <div class="modal-body">
+          <p>Check out the body on my modal bro-ski!</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
       </p>
     </div>
     <div class="row-fluid">
