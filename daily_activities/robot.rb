@@ -29,7 +29,7 @@ require 'minitest/autorun'
 robot = Robot.new
 robot2 = Robot.new
 puts robot.name
-puts robot.name
+robot.reset
 puts robot.name
 
 puts robot2.name
